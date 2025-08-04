@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso a la Discoteca</title>
+</head>
+<body>
+  <h2>Ejercicio 1: Ingreso a la Discoteca</h2>
+  <button onclick="verificarIngreso()">Probar</button>
+
+  <script>
+    function verificarIngreso() {
+      let nombre = prompt("¿Cuál es tu nombre?");
+      let edad = parseInt(prompt("¿Cuál es tu edad?"));
+
+      if (edad >= 18) {
+        alert("Puedes ingresar a la discoteca.");
+      } else {
+        alert("No puedes ingresar a la discoteca.");
+      }
+
+      if (nombre.toLowerCase() === "mario" || nombre.toLowerCase() === "carlos") {
+        alert("¡Tienes acceso VIP!");
+      }
+    }
+   </script>
+  <h2>Ejercicio 2: Ingreso al Equipo</h2>
+  <button onclick="verificarEquipo()">Probar</button>
+
+  <script>
+    function verificarEquipo() {
+      let estatura = parseFloat(prompt("¿Cuál es tu estatura en metros?"));
+      let velocidad = parseFloat(prompt("¿Cuál es tu velocidad en segundos en 100m?"));
+      let edad = parseInt(prompt("¿Cuál es tu edad?"));
+
+      if (estatura >= 1.70 && velocidad <= 13.0) {
+        alert("Puedes ingresar al equipo.");
+
+ if (edad < 18) {
+  alert("Irás a las divisiones menores.");
+        } else {
+          alert("Irás al equipo profesional.");
+        }
+      } else {
+        alert("No cumples con los requisitos para ingresar al equipo.");
+      }
+     }
+  </script>
+</body>
+</html>
