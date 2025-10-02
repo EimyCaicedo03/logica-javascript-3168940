@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto ALUNA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="hero">
+      <h1>Proyecto ALUNA</h1>
+      <p>"Transformación a través del arte y la memoria."</p>
+      <nav>
+        <a href="#intro">Introducción</a>
+        <a href="#capitulos">Capítulos</a>
+        <a href="#creadores">Creadores</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- Sección 1 -->
+    <section id="intro" class="card">
+      <h2>Introducción</h2>
+      <img src="imagen1.png" alt="Imagen introductoria" class="img-section">
+      <p>ALUNA es un proyecto que conecta la memoria, el simbolismo y la transformación personal a través del arte y la cultura ancestral.</p>
+      <button onclick="cambiarColor()"> Cambiar color de fondo</button>
+    </section>
+
+    <!-- Sección 2 -->
+    <section id="capitulos" class="card">
+      <h2>Capítulos</h2>
+      <img src="imagen2.png" alt="Capítulos del proyecto" class="img-section">
+      <ul id="listaCapitulos">
+        <li><b>Capítulo 1:</b> Viaje interior y sanación.</li>
+        <li><b>Capítulo 2:</b> Encuentro con la memoria ancestral.</li>
+        <li><b>Capítulo 3:</b> Renacer a través del arte.</li>
+      </ul>
+      <button onclick="agregarCapitulo()"> Agregar capítulo</button>
+    </section>
+
+    <!-- Sección 3 -->
+    <section id="creadores" class="card">
+      <h2>Creadores</h2>
+      <img src="Imagen 3.jpg" alt="Equipo de creadores" class="img-section">
+      <div id="infoCreadores">
+        <p><b>Eimy Caicedo:</b> Diseño visual.</p>
+        <p><b>Juan David Jiménez:</b> Narrativa e historias.</p>
+        <p><b>María Fernanda Rodríguez:</b> Programación.</p>
+      </div>
+      <button onclick="mostrarOcultar()"> Mostrar / Ocultar creadores</button>
+    </section>
+
+    <!-- Sección 4 -->
+    <section id="contacto" class="card">
+      <h2>Contacto</h2>
+      <form onsubmit="return validarFormulario()">
+        <input type="text" id="nombre" placeholder="Tu nombre">
+        <input type="email" id="email" placeholder="Tu correo">
+        <textarea id="mensaje" placeholder="Tu mensaje"></textarea>
+        <button type="submit"> Enviar</button>
+      </form>
+      <p id="mensajeExito"></p>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 | alunacv@mail.com | +57 324 4488852</p>
+    <button onclick="volverArriba()">⬆ Volver arriba</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
